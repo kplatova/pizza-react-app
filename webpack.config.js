@@ -33,4 +33,10 @@ module.exports = (env, argv) => ({
         `<!DOCTYPE html><html lang="en"><head><title>${name}</title></head><body><div id="app"></div></body></html>`,
     }),
   ],
+  devServer: {
+    contentBase: './dist',
+    compress: true,
+    port: 8888,
+    hot: true,
+  }
 });
