@@ -1,6 +1,7 @@
 import './index.styl';
 
+import MainPage from './pages/Home';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<div className="container">pizza app</div>, document.getElementById('app'));
+ReactDOM.render(<MainPage />, document.getElementById('app'));
