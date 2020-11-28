@@ -24,6 +24,10 @@ module.exports = (env, argv) => ({
           },
         },
       },
+      {
+        test: /\.styl$/,
+        use: ['style-loader', 'css-loader', 'stylus-loader'],
+      },
     ],
   },
   plugins: [
